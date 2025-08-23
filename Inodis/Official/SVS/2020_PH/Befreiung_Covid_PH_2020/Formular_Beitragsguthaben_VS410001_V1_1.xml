@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="UTF-8"?><afs:EAntrag xmlns:afs="http://www.aforms2web.com/afs/eantrag" version="2.1">
+    <afs:FormularDaten>
+        <afs:AntragsDaten>
+            <afs:AfsForm generalId="VS410001" name="Beitragsguthaben_VS410001_V1_1">
+                <afs:FormularTitel>Antrag auf Rückzahlung eines Beitragsguthabens aus der GSVG- und/oder FSVG-Versicherung</afs:FormularTitel>
+                <afs:Block name="block_Bundesland_VS130006_VS41001_V1_0">
+                    <afs:Label>Ihre zuständiges SVS Kundencenter</afs:Label>
+                    <afs:Field controlType="select" javaType="java.lang.Object" name="Bundesland_1_SVA">
+                        <afs:Label>Bundesland, in dem Ihr Betrieb gemeldet ist</afs:Label>
+                        <afs:Value key="6">Steiermark</afs:Value>
+                    </afs:Field>
+                </afs:Block>
+                <afs:Block name="block_Personendaten_SVA_VS410001_V1_0">
+                    <afs:Label>Versicherte(r)</afs:Label>
+                    <afs:Field controlType="text" javaType="java.lang.String" name="vorname__esvstd__fmnzg">
+                        <afs:Label>Vorname</afs:Label>
+                        <afs:Value>Bernd</afs:Value>
+                    </afs:Field>
+                    <afs:Field controlType="text" javaType="java.lang.String" name="familienname__esvstd__fmnzg">
+                        <afs:Label>Familienname</afs:Label>
+                        <afs:Value>Malle</afs:Value>
+                    </afs:Field>
+                    <afs:Field controlType="text" javaType="java.lang.String" name="akad_grad__esvstd__fmnzg">
+                        <afs:Label>Akademischer Grad</afs:Label>
+                        <afs:Value>DI</afs:Value>
+                    </afs:Field>
+                    <afs:Field controlType="text" javaType="java.lang.String" name="sozialvers_nummer__esvstd__fmnzg">
+                        <afs:Label>Sozialversicherungsnummer</afs:Label>
+                        <afs:Value>1158081079</afs:Value>
+                    </afs:Field>
+                </afs:Block>
+                <afs:Block name="block_Antragstellung_VS140004_V1_0">
+                    <afs:Label>Antragstellung</afs:Label>
+                    <afs:Field controlType="radio" javaType="java.lang.Object" name="Erklaerung_tel_VS140004">
+                        <afs:Label>Diese Erklärung wurde bereits telefonisch abgegeben</afs:Label>
+                        <afs:Value key="2">nein</afs:Value>
+                    </afs:Field>
+                    <afs:Field controlType="radio" javaType="java.lang.Object" name="Antragstellung_SVA_radio">
+                        <afs:Label>Die Antragstellung erfolgt in eigenem Namen</afs:Label>
+                        <afs:Value key="1">ja</afs:Value>
+                    </afs:Field>
+                </afs:Block>
+                <afs:Block hidden="true" name="block_Vertret_Pers_SVA_VS410001_V1_0">
+                    <afs:Label>Daten zur vertretungsbefugten Person</afs:Label>
+                    <afs:Field controlType="radio" javaType="java.lang.Object" name="Daten_vertretungsbefugter_yordse">
+                        <afs:Label>Die vertretungsbefugte Person ist</afs:Label>
+                        <afs:Value key=""/>
+                    </afs:Field>
+                    <afs:Field controlType="text" javaType="java.lang.String" name="akad_grad__esvstd">
+                        <afs:Label>Firma</afs:Label>
+                        <afs:Value/>
+                    </afs:Field>
+                    <afs:Field controlType="text" javaType="java.lang.String" name="strasse__esvstd">
+                        <afs:Label>Straße, Hausnummer</afs:Label>
+                        <afs:Value/>
+                    </afs:Field>
+                    <afs:Field controlType="text" javaType="java.lang.Integer" name="postleitzahl__esvstd">
+                        <afs:Label>Postleitzahl</afs:Label>
+                        <afs:Value/>
+                    </afs:Field>
+                    <afs:Field controlType="text" javaType="java.lang.String" name="ort__esvstd">
+                        <afs:Label>Ort</afs:Label>
+                        <afs:Value/>
+                    </afs:Field>
+                    <afs:Field controlType="text" javaType="java.lang.String" name="e_mail__esvstd">
+                        <afs:Label>E-Mail-Adresse</afs:Label>
+                        <afs:Value/>
+                    </afs:Field>
+                    <afs:Field controlType="text" javaType="java.lang.String" name="telefon__esvstd">
+                        <afs:Label>Telefon</afs:Label>
+                        <afs:Value/>
+                    </afs:Field>
+                    <afs:Field controlType="text" javaType="java.lang.String" name="fax__esvstd">
+                        <afs:Label>Fax</afs:Label>
+                        <afs:Value/>
+                    </afs:Field>
+                </afs:Block>
+                <afs:Block hidden="true" name="block_Versichertendaten_SVA_V1_0">
+                    <afs:Label>Daten des Versicherten</afs:Label>
+                    <afs:Field controlType="text" javaType="java.lang.String" name="vorname__esvstd__fmnzg">
+                        <afs:Label>Vorname</afs:Label>
+                        <afs:Value/>
+                    </afs:Field>
+                    <afs:Field controlType="text" javaType="java.lang.String" name="familienname__esvstd__fmnzg">
+                        <afs:Label>Familienname</afs:Label>
+                        <afs:Value/>
+                    </afs:Field>
+                    <afs:Field controlType="text" javaType="java.lang.String" name="akad_grad__esvstd__fmnzg">
+                        <afs:Label>Akademischer Grad</afs:Label>
+                        <afs:Value/>
+                    </afs:Field>
+                    <afs:Field controlType="text" javaType="java.lang.String" name="sozialvers_nummer__esvstd__fmnzg">
+                        <afs:Label>Sozialversicherungsnummer</afs:Label>
+                        <afs:Value/>
+                    </afs:Field>
+                </afs:Block>
+                <afs:Block name="block_Wohnanschrift_410001_V1_0">
+                    <afs:Label>Adresse</afs:Label>
+                    <afs:Field controlType="text" javaType="java.lang.String" name="strasse__esvstd">
+                        <afs:Label>Straße, Hausnummer</afs:Label>
+                        <afs:Value>Glacisstrasse 21</afs:Value>
+                    </afs:Field>
+                    <afs:Field controlType="text" javaType="java.lang.String" name="postleitzahl_i__esvstd">
+                        <afs:Label>Postleitzahl</afs:Label>
+                        <afs:Value>8010</afs:Value>
+                    </afs:Field>
+                    <afs:Field controlType="text" javaType="java.lang.String" name="ort__esvstd">
+                        <afs:Label>Ort</afs:Label>
+                        <afs:Value>Graz</afs:Value>
+                    </afs:Field>
+                </afs:Block>
+                <afs:Block hidden="true" name="block_Anweisungsdetails_gesetzlicherVertr_VS410001_V1_0">
+                    <afs:Label>Anweisungsdetails - gesetztlicher Vertreter</afs:Label>
+                    <afs:Field controlType="text" javaType="java.math.BigDecimal" name="Zahlenfeld">
+                        <afs:Label>Beitragsguthaben €</afs:Label>
+                        <afs:Value/>
+                    </afs:Field>
+                    <afs:Field controlType="checkbox" javaType="java.lang.Object" name="kenntnisnahme_VS_110024_SVA">
+                        <afs:Label>Hiermit ersuche ich Sie, das Beitragsguthaben des/der Obgenannten anzuweisen.</afs:Label>
+                        <afs:Value>Nein</afs:Value>
+                    </afs:Field>
+                </afs:Block>
+                <afs:Block hidden="true" name="block_Anweisungsdetails_steuerlicherVertreter_VS410001_V1_0">
+                    <afs:Label>Anweisungsdetails - bevollmächtigter steuerlicher Vertreter</afs:Label>
+                    <afs:Field controlType="radio" javaType="java.lang.Object" name="Vollmacht_41001">
+                        <afs:Label>Art der Vollmacht</afs:Label>
+                        <afs:Value key=""/>
+                    </afs:Field>
+                    <afs:Field controlType="text" javaType="java.math.BigDecimal" name="Zahlenfeld">
+                        <afs:Label>Beitragsguthaben €</afs:Label>
+                        <afs:Value/>
+                    </afs:Field>
+                    <afs:Field controlType="checkbox" javaType="java.lang.Object" name="kenntnisnahme_VS_110024_SVA">
+                        <afs:Label>Hiermit ersuche ich Sie, unter Berufung auf die mir/meiner Kanzlei erteilten Vollmacht, das Beitragsguthaben des/der Obgenannten anzuweisen.</afs:Label>
+                        <afs:Value>Nein</afs:Value>
+                    </afs:Field>
+                </afs:Block>
+                <afs:Block name="block_Anweisungsdetails_ohneBevollmaechtigung_VS410001_V1_0">
+                    <afs:Label>Anweisungsdetails</afs:Label>
+                    <afs:Field controlType="text" javaType="java.math.BigDecimal" name="Zahlenfeld">
+                        <afs:Label>Beitragsguthaben €</afs:Label>
+                        <afs:Value>795,21</afs:Value>
+                    </afs:Field>
+                    <afs:Field controlType="checkbox" javaType="java.lang.Object" name="kenntnisnahme_VS_110024_SVA">
+                        <afs:Label>Hiermit ersuche ich Sie, mein Beitragsguthaben anzuweisen</afs:Label>
+                        <afs:Value>ja</afs:Value>
+                    </afs:Field>
+                </afs:Block>
+                <afs:Block name="block_Anweisungsart_VS41001_V1_0">
+                    <afs:Label>Anweisungsart</afs:Label>
+                    <afs:Field controlType="radio" javaType="java.lang.Object" name="Anweisungsart">
+                        <afs:Label>Anweisungsart</afs:Label>
+                        <afs:Value key="1">Bankkonto</afs:Value>
+                    </afs:Field>
+                    <afs:Field controlType="html" javaType="java.lang.String" name="Schritt1_PPS190102">
+                        <afs:Label>Bankverbindung</afs:Label>
+                        <afs:Value/>
+                    </afs:Field>
+                    <afs:Field controlType="text" javaType="java.lang.String" name="BerufArt_VSUnbekannt3">
+                        <afs:Label>Bankbezeichnung</afs:Label>
+                        <afs:Value>Raiffeisen Landesbank Steiermark</afs:Value>
+                    </afs:Field>
+                    <afs:Field controlType="text" javaType="java.lang.String" name="BerufArt_VSUnbekannt3_1">
+                        <afs:Label>Name des Kontoinhabers</afs:Label>
+                        <afs:Value>Bernd Malle</afs:Value>
+                    </afs:Field>
+                    <afs:Field controlType="text" javaType="java.lang.String" name="iban__esvstd">
+                        <afs:Label>IBAN</afs:Label>
+                        <afs:Value>AT513800000000319335</afs:Value>
+                    </afs:Field>
+                    <afs:Field controlType="text" javaType="java.lang.String" name="bic__esvstd">
+                        <afs:Label>BIC</afs:Label>
+                        <afs:Value>RZSTAT2G</afs:Value>
+                    </afs:Field>
+                    <afs:Field controlType="text" javaType="java.lang.String" name="Adresse">
+                        <afs:Label>per Post an: (Str., Hausnr.)</afs:Label>
+                        <afs:Value/>
+                    </afs:Field>
+                    <afs:Field controlType="text" javaType="java.lang.Integer" name="postleitzahl__esvstd">
+                        <afs:Label>Postleitzahl</afs:Label>
+                        <afs:Value/>
+                    </afs:Field>
+                    <afs:Field controlType="text" javaType="java.lang.String" name="ort__esvstd">
+                        <afs:Label>Ort</afs:Label>
+                        <afs:Value/>
+                    </afs:Field>
+                </afs:Block>
+                <afs:Block hidden="true" name="block_Beilagen_VS410001_V1_0">
+                    <afs:Label>Beilage(n):</afs:Label>
+                    <afs:Field controlType="file" javaType="com.brainment.webfaces.validation.fields.UploadedFile" name="beilagen_wh_StdFormate__fgstd">
+                        <afs:Label>Beilage</afs:Label>
+                        <afs:Value/>
+                    </afs:Field>
+                </afs:Block>
+                <afs:Locale>de_AT</afs:Locale>
+            </afs:AfsForm>
+        </afs:AntragsDaten>
+    <afs:Signatur hidden="false" signator="Bernd Christian Malle" xmlns:afs="http://www.aforms2web.com/afs/eantrag"><dsig:Signature xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" Id="signature-1-1"><dsig:SignedInfo><dsig:CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/><dsig:SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha256"/><dsig:Reference Id="reference-1-1" URI=""><dsig:Transforms><dsig:Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/><dsig:Transform Algorithm="http://www.w3.org/TR/1999/REC-xslt-19991116"><xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" exclude-result-prefixes="xsl afs" version="1.0" xmlns:afs="http://www.aforms2web.com/afs/eantrag">
+
+  <!-- zur Anzeige im Mocca Applet -->
+
+	<xsl:variable name="separator">&lt;br/&gt;</xsl:variable>
+	
+	<xsl:template match="/">
+		<html xmlns="http://www.w3.org/1999/xhtml">
+			<head>
+				<title>AFS </title>
+				<style type="text/css">
+					body {
+						font-family: serif;
+						font-size: 12px;
+					}
+					h1 {
+						font-weight: bold;
+						font-size: 16px;
+					}
+					table#antrag {
+						margin-top: 10px;
+					}
+					td.block_title {
+						font-weight: bold;
+						color: black;
+						background-color: #d3d3d3;
+						padding-top: 1px;
+						padding-bottom: 1px;
+					}
+					td.label {
+						padding-left: 10px;
+						padding-right: 15px;
+						text-align: right;
+						vertical-align: super;
+					}
+					td.html_label {
+						padding-left: 10px;
+						padding-right: 20px;
+						text-align: left;
+						vertical-align: super;
+					}
+					td.value {
+						font-weight: bold;
+						padding-left: 15px;
+						padding-right: 20px;
+						vertical-align: super;
+					}
+                </style>
+            </head>
+            <body>
+           		<xsl:if test="//afs:FormularTitel">
+           			<h1><xsl:value-of select="//afs:FormularTitel"/></h1>
+           		</xsl:if>
+            	<table id="antrag">
+            		<xsl:if test="//afs:Empfaenger">
+	                	<tr>
+	                		<td class="block_title" colspan="2">Ihre Angaben</td>
+		                </tr>
+                    	<tr>
+                    		<td class="label">Empfänger</td>
+                    		<td class="value">
+                   				<xsl:value-of select="//afs:Empfaenger"/>
+                    		</td>
+                    	</tr>		                          			
+            		</xsl:if>
+	                <xsl:for-each select="//afs:Block">
+	                	<tr>
+	                		<xsl:if test="not(@repeatableIndex) or (@repeatableIndex = 0)">
+		                		<td class="block_title" colspan="2">
+				                    <xsl:value-of select="afs:Label"/>
+			                	</td>
+			                </xsl:if>
+	                		<xsl:if test="@repeatableIndex">
+		                		<td colspan="2"> </td>
+			                </xsl:if>
+		                </tr>
+	                    <xsl:for-each select="afs:Field">
+	                    	<tr>
+	                    		<xsl:if test="@controlType = 'html' and not(afs:Label)">
+	                    			<td class="html_label" colspan="2">
+	                    				<xsl:value-of disable-output-escaping="yes" select="afs:Value"/>
+	                    			</td>	                    		
+	                    		</xsl:if>
+	                    		<xsl:if test="afs:Label or not(@controlType = 'html')">
+	                    			<td class="label">
+	                    				<xsl:if test="not(@showLabelAsValue = 'true')"><xsl:value-of select="afs:Label"/></xsl:if>
+	                    				<xsl:if test="@showLabelAsValue = 'true'"> </xsl:if>
+	                    			</td>
+		                    		<td class="value">
+		                    			<xsl:if test="@controlType = 'html'">
+		                    				<xsl:value-of disable-output-escaping="yes" select="afs:Value"/>
+		                    			</xsl:if>
+		                    			<xsl:if test="@showLabelAsValue = 'true'">
+		                    				<xsl:value-of disable-output-escaping="yes" select="afs:Label"/>
+		                    			</xsl:if>
+		                    			<xsl:if test="not(@controlType = 'html') and not(@showLabelAsValue = 'true')">
+			                    			<xsl:for-each select="afs:Value">
+			                    				<xsl:value-of select="."/>
+			                    				<xsl:if test="@digestValue">
+			                    					(SHA-1=<xsl:value-of select="@digestValue"/>)
+			                    				</xsl:if>
+			                    				<xsl:if test="not(position()=last())"><xsl:value-of disable-output-escaping="yes" select="$separator"/></xsl:if>
+			                    			</xsl:for-each>
+		                    			</xsl:if>
+		                    		</td>
+	                    		</xsl:if>
+	                    	</tr>
+                    	</xsl:for-each>
+	                </xsl:for-each>
+                </table>
+            </body>
+        </html>
+    </xsl:template>
+</xsl:stylesheet></dsig:Transform><dsig:Transform Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315#WithComments"/></dsig:Transforms><dsig:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/><dsig:DigestValue>SqhYOz5ZIUAZp3Qaesc1+wAtaJmilFPp4EIYR5HwxTE=</dsig:DigestValue></dsig:Reference><dsig:Reference Id="etsi-data-reference-1-1" Type="http://uri.etsi.org/01903#SignedProperties" URI="#etsi-signedproperties-1-1"><dsig:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/><dsig:DigestValue>wUWUIK7MXdrfj3btkOS74MEXvXymCVySJROhQqO3MXU=</dsig:DigestValue></dsig:Reference></dsig:SignedInfo><dsig:SignatureValue Id="signaturevalue-1-1">DTcSWx5FlHc7A+h2MMRA9LMd+X/wyUqQwcO+gF9I6k1+qI6avFp8muGMy5+v0fw73HyHJhBz31wl/7YZmToVvA==</dsig:SignatureValue><dsig:KeyInfo><dsig:X509Data><dsig:X509Certificate>MIIFojCCA4qgAwIBAgIEVgDbnzANBgkqhkiG9w0BAQsFADCBnTELMAkGA1UEBhMCQVQxSDBGBgNVBAoMP0EtVHJ1c3QgR2VzLiBmLiBTaWNoZXJoZWl0c3N5c3RlbWUgaW0gZWxla3RyLiBEYXRlbnZlcmtlaHIgR21iSDEhMB8GA1UECwwYYS1zaWduLXByZW1pdW0tbW9iaWxlLTA1MSEwHwYDVQQDDBhhLXNpZ24tcHJlbWl1bS1tb2JpbGUtMDUwHhcNMTkwMzI2MTE0MDIwWhcNMjQwMzI2MTE0MDIwWjBuMQswCQYDVQQGEwJBVDEeMBwGA1UEAwwVQmVybmQgQ2hyaXN0aWFuIE1hbGxlMQ4wDAYDVQQEDAVNYWxsZTEYMBYGA1UEKgwPQmVybmQgQ2hyaXN0aWFuMRUwEwYDVQQFEwwzOTcyMTM0NzM3ODgwWTATBgcqhkjOPQIBBggqhkjOPQMBBwNCAARKqoBjPtVrLLjOhBa12G+gR4o5Fl5REFji1a0laXkjaX7HhNZaYbc+vUdYob8wEk6M3+jDHKy0N57xqo8+63SVo4IB4TCCAd0wfQYIKwYBBQUHAQEEcTBvMEQGCCsGAQUFBzAChjhodHRwOi8vd3d3LmEtdHJ1c3QuYXQvY2VydHMvYS1zaWduLXByZW1pdW0tbW9iaWxlLTA1LmNydDAnBggrBgEFBQcwAYYbaHR0cDovL29jc3AuYS10cnVzdC5hdC9vY3NwMBMGA1UdIwQMMAqACEjz/ZwjDod3MHIGCCsGAQUFBwEDBGYwZDAKBggrBgEFBQcLAjAIBgYEAI5GAQEwCAYGBACORgEEMBMGBgQAjkYBBjAJBgcEAI5GAQYBMC0GBgQAjkYBBTAjMCEWG2h0dHBzOi8vd3d3LmEtdHJ1c3QuYXQvcGRzLxMCRU4wEQYDVR0OBAoECEHgA7eh7IksMA4GA1UdDwEB/wQEAwIGwDAJBgNVHRMEAjAAMGAGA1UdIARZMFcwCAYGBACLMAEBMEsGBiooABEBFDBBMD8GCCsGAQUFBwIBFjNodHRwOi8vd3d3LmEtdHJ1c3QuYXQvZG9jcy9jcC9hLXNpZ24tcHJlbWl1bS1tb2JpbGUwQwYDVR0fBDwwOjA4oDagNIYyaHR0cDovL2NybC5hLXRydXN0LmF0L2NybC9hLXNpZ24tcHJlbWl1bS1tb2JpbGUtMDUwDQYJKoZIhvcNAQELBQADggIBAGlJmiUZQayMvzJ8VCKjt+q3mJOG/mMmLjP/rYHGAtymAacqUUammd1s8bFaSbSqCqNFk9AGJAxZTW9JtfrygQvCKoDPGLoHZzR2Cd2IeCqDW8Eb2BS+vy/lBop5VymPZXuz8OsjJzQ24tWr0U0FKJiwsJYQM3Xh7cwtjtma2ZpSmQmnqfSpg6C+VlSRx3H/noAuKiqeqc1e3K7lFR8aWALo7+9ZrBn//g4kLipfsYOnYKxtnPFGmxmuCm8A2CtsUZ2BmSKFlSV4A0LNxS8TlXBadb+ocArUX6hlOYh2l0O3hrrfkhNQSml4QkXvi3KSSqwW54YpN5qyhGKh0wWWxt/yV2ernbYtjs4WthDkcwJlPum8opP3YBoTZo4yXhwCACMAMWuGApiaVhwmdSIEz6J+2IYQGdqp4nNL/nGa7hmGLSujRkqqxRlDJWjQJd38WpRClDflbedd06R/iww+JIBxBFnOiAiP+QU078KrH+wiSxHC1RCeUwqPkpKO/y8QTGH5xT8XBDUG90lK4HhatxTpz0hMBrYmL2Ej5Ly5q9gXTBfoKnphyQQ77sBt+yHtPpT8Ah7m861HtF+0uGfks8Kb+SP31wpkdBVfIgHSEvWdk5Ed9btHjGoRkVVMFKWT41uaLPmCHWsJ60k+UfelN4/LRM4p/Je9g/tyov1RHnmr</dsig:X509Certificate></dsig:X509Data></dsig:KeyInfo><dsig:Object Id="etsi-signed-1-1"><etsi:QualifyingProperties xmlns:etsi="http://uri.etsi.org/01903/v1.3.2#" Target="#signature-1-1"><etsi:SignedProperties Id="etsi-signedproperties-1-1"><etsi:SignedSignatureProperties><etsi:SigningTime>2020-08-20T15:24:02Z</etsi:SigningTime><etsi:SigningCertificate><etsi:Cert><etsi:CertDigest><dsig:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/><dsig:DigestValue>yR4S5BuorbkoBLAd/PHoZO6kSvllVfUzUq84vpqQohE=</dsig:DigestValue></etsi:CertDigest><etsi:IssuerSerial><dsig:X509IssuerName>CN=a-sign-premium-mobile-05,OU=a-sign-premium-mobile-05,O=A-Trust Ges. f. Sicherheitssysteme im elektr. Datenverkehr GmbH,C=AT</dsig:X509IssuerName><dsig:X509SerialNumber>1442896799</dsig:X509SerialNumber></etsi:IssuerSerial></etsi:Cert></etsi:SigningCertificate><etsi:SignaturePolicyIdentifier><etsi:SignaturePolicyImplied/></etsi:SignaturePolicyIdentifier></etsi:SignedSignatureProperties><etsi:SignedDataObjectProperties><etsi:DataObjectFormat ObjectReference="#reference-1-1"><etsi:MimeType>application/xhtml+xml</etsi:MimeType></etsi:DataObjectFormat></etsi:SignedDataObjectProperties></etsi:SignedProperties></etsi:QualifyingProperties></dsig:Object></dsig:Signature> </afs:Signatur></afs:FormularDaten>
+<afs:BackofficeDaten xmlns:afs="http://www.aforms2web.com/afs/eantrag">
+    <afs:EingangsBericht>
+        <afs:TimestampEingang>20.08.2020 um 17:24:42 Uhr</afs:TimestampEingang>
+        <afs:Eingangsnummer>AFS-1103-0001416674-200820</afs:Eingangsnummer>
+        <afs:AntragSignatur>true</afs:AntragSignatur>
+        <afs:AntragSignaturCheck>true</afs:AntragSignaturCheck>
+        <afs:AntragZertifikatCheck>true</afs:AntragZertifikatCheck>
+    </afs:EingangsBericht>
+    <afs:Signatur><dsig:Signature xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" Id="signature-1-2"><dsig:SignedInfo><dsig:CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/><dsig:SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/><dsig:Reference Id="reference-1-2" URI=""><dsig:Transforms><dsig:Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></dsig:Transforms><dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/><dsig:DigestValue>zhZKUyuUjXhLHIuKFGAhxjv76x8=</dsig:DigestValue></dsig:Reference><dsig:Reference Type="http://uri.etsi.org/01903/v1.1.1#SignedProperties" URI="#xmlns(etsi=http://uri.etsi.org/01903/v1.1.1%23)%20xpointer(id('etsi-signed-1-2')/child::etsi:QualifyingProperties/child::etsi:SignedProperties)"><dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/><dsig:DigestValue>qCZ+VVJz6FFWjOim6WKrGbWpzUw=</dsig:DigestValue></dsig:Reference></dsig:SignedInfo><dsig:SignatureValue>BR3GScKpuYqkprFDLPKLi64aTm8QzVkw9hmE4s+g4SLq6ez2GMySVjS7erFCdNgS
+O2/AGFc/2OQT5Nk9sx+M8POaIVedtCk0XUk3DqPY2a3jFQ77BGmDZ8IcOuoQIHFf
+EWGPXsALwQSztA+FguwDN4abkZ9+OwCvCHVB9Btjq/Idxt+t7WM9nCxeWvtAfH6C
++218mqScorER+hApIqbK8RQcR6RThRpi3a/24+zXnXMSVsh9FR2gp+2Y/Brh1L+s
+83YtTNMyYGAe7lsPsvijiAq0PHvneRgtLHl2EYdTBoS9GQr7TNmpcQPduILNlLq0
+FGrqXxC1607075hLDyTlqNJtNPwwLooQ8vp/cLJTRf6zH0EY0llz67wSHwkcPG8S
+MEplzXe7ueVJbh7B+zvBCzm/J847AKw02fkWPfJORV8TPqb0+UpD4jJlUJzv4AYg
+BkWqL7AuOnf+gNnmLy2x2elB2lunA/+yjdlL33bmAxDhui7JEBNEmsZnLR4hIYhz
+P7796EKVmHIYOpSAgPV6X7KZolXT8GuUG7819rV7dYg8iz872nkjsSMOhAXoNsHY
+aP2QxFKvkzOF2cKGJQelaeUL4MRaDt1re/Ij8Y2BDhDNTtE9awpTYGGwPXQ185AH
+sJx62pKkVa9l9Dm+BaBrQ+giMzPaXFPvVGekglVa5hU=</dsig:SignatureValue><dsig:KeyInfo><dsig:X509Data><dsig:X509Certificate>MIIHeTCCBWGgAwIBAgIEKbtD1TANBgkqhkiG9w0BAQsFADCBkzELMAkGA1UEBhMC
+QVQxSDBGBgNVBAoMP0EtVHJ1c3QgR2VzLiBmLiBTaWNoZXJoZWl0c3N5c3RlbWUg
+aW0gZWxla3RyLiBEYXRlbnZlcmtlaHIgR21iSDEcMBoGA1UECwwTYS1zaWduLWNv
+cnBvcmF0ZS0wNTEcMBoGA1UEAwwTYS1zaWduLWNvcnBvcmF0ZS0wNTAeFw0xOTA4
+MjgxNDQ3MzBaFw0yNDA4MjgxMjQ3MzBaMIHDMQswCQYDVQQGEwJBVDEzMDEGA1UE
+CgwqRGFjaHZlcmJhbmQgZGVyIFNvemlhbHZlcnNpY2hlcnVuZ3N0cmFlZ2VyMTMw
+MQYDVQQLDCpEYWNodmVyYmFuZCBkZXIgU296aWFsdmVyc2ljaGVydW5nc3RyYWVn
+ZXIxMzAxBgNVBAMMKkRhY2h2ZXJiYW5kIGRlciBTb3ppYWx2ZXJzaWNoZXJ1bmdz
+dHJhZWdlcjEVMBMGA1UEBRMMNDA5MDE2NDI3ODAxMIICIjANBgkqhkiG9w0BAQEF
+AAOCAg8AMIICCgKCAgEAxfWuUmSJb2rR3Ju31Y73diE+lF7SD5rUrH3br2QIe5dT
+pI/UaYVjuNviTQ3OzJK6Wvx1JYdwU+FVWFU837IS7af6lgzUvTPHr0Hr8A8PhzNi
+IQsGb4RNGKYRhLY80EDRSGu6cAZb+gnJcXDfqiCk7znJPi5LCpyGIJ/VCrM9+Lqj
+y8OAq5X7k7oIOR7mm6PQv7DC0/mX1VwCVOHIfAsr2472IvCtUqPrCjNvlWU1h2Sr
+lLZkwthQc3ktI6dYQWl4YBl747f+HalEX/7eiZfvQwQ/FEWCWkcC+CReewotKmQ+
+H8rBO519WHIGLuPhk5iKPPWpiR74Av8S3PtjMdtA+5iPPBp8xKubI35KwYeNXISc
+v+ag1PWcpjb5fpQbwyVDtznSM3Yo8cIcbjdlyomNKIVW4x9Gh/mwhPP1XQccw8lm
+8xEsM9UoHBG57I2VK+5mUKNrV3HVBx7T1wCEpX3qNVksjtNtdnye8WTROvPxMVIK
+MVSbB5lSpyt/V/lvf/IIuKE7RjA4oOYAbxjxWiM/cNJpnClpdilTdG9JtdpBzTaz
+Cq5/iRsTYnf54Jlgg8LiHH6yZjxf/6Q8R43H4t371UTvfPb3S0PeTGHENng2VdDA
+V9v6PePYyYcgpfxEZugOh/bV7AD1DCrkipx5rZASWkKsrspnOzEK77Kh8JJbefsC
+AwEAAaOCAaEwggGdMH8GCCsGAQUFBwEBBHMwcTBGBggrBgEFBQcwAoY6aHR0cDov
+L3d3dy5hLXRydXN0LmF0L2NlcnRzL2Etc2lnbi1jb3Jwb3JhdGUtbGlnaHQtMDJh
+LmNydDAnBggrBgEFBQcwAYYbaHR0cDovL29jc3AuYS10cnVzdC5hdC9vY3NwMBMG
+A1UdIwQMMAqACEp71XZNFyFVMC8GA1UdEQQoMCaBJGpvc2VmLnNvdWhyYWRhQHNv
+emlhbHZlcnNpY2hlcnVuZy5hdDARBgNVHQ4ECgQISVcrglh5I/8wDgYDVR0PAQH/
+BAQDAgSwMBAGByooAAoBAQEEBQwDU0RWMAkGA1UdEwQCMAAwVAYDVR0gBE0wSzBJ
+BgYqKAARARIwPzA9BggrBgEFBQcCARYxaHR0cDovL3d3dy5hLXRydXN0LmF0L2Rv
+Y3MvY3AvYS1zaWduLUFtdHNzaWduYXR1cjA+BgNVHR8ENzA1MDOgMaAvhi1odHRw
+Oi8vY3JsLmEtdHJ1c3QuYXQvY3JsL2Etc2lnbi1jb3Jwb3JhdGUtMDUwDQYJKoZI
+hvcNAQELBQADggIBAFprBgHetvO56EOnPfiRMa/NvmpODw4z7gnQsljj2/vudOnB
+QxDtfMmXGRGP2yUl+N3ozqZHqbh1HDWrU0qcHIr4zRvzYVjhtoQeA59mdT7yn3PP
+CiVAYMD5ysWfjjfSwCsYgYhbfP8NaPplH+oXPmpglWKK3wOE4ZpTGpuKlV3QqGCt
+2dZHeP+L3euv/PhN8bCHlw/lUGoxcBpMmvCczJX6nghJ2TE0+9RmX3uELXPujfkk
+q+6B7H8qJLZNEkf9+PguYxCazDoUVkBUxxXp7W9poYXoVKv2OsjQ9wrEe8iyxXiE
+P10Hb9nOIsVAuN+1vHSuW+0uOKrOxjX2fGwlyByfGHBiMlI2z63mcm480gm0RXCs
+ol430HYKYDhvFf7Cl6nb+5Fs+FoEE+kHrZmNwMDtNb/HW0WKqWh01iEfL5OKtktx
+5WuYoOEdgeHvRot2Ob4/5+suJSjvAmAYVFDOz8Tiwf97uU06zNT9MmrKDHXuHVE6
+UuLdNCBzQ6hyYyQJX5Myd6iO9pxePFJ634lQGFmi6IRQhumkQfCMvrWSff+0MZXA
+qDU+mKe/LZN35enfho6Od+FY3upZu9I5VCjpxgHpdZ1XQEgEwb/wxdYBCHrlVbew
+o0UqMhgVTM+FkjOV0PDAzwSmPcAWIRbr+diaPljg4pqyfP/Modna5Tfo2H1R</dsig:X509Certificate></dsig:X509Data></dsig:KeyInfo><dsig:Object Id="etsi-signed-1-2"><etsi:QualifyingProperties xmlns:etsi="http://uri.etsi.org/01903/v1.1.1#" Target="#signature-1-2"><etsi:SignedProperties><etsi:SignedSignatureProperties><etsi:SigningTime>2020-08-20T17:24:42+02:00</etsi:SigningTime><etsi:SigningCertificate><etsi:Cert><etsi:CertDigest><etsi:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/><etsi:DigestValue>jr4db/W1bW3e4LO2DF3hd8USCTU=</etsi:DigestValue></etsi:CertDigest><etsi:IssuerSerial><dsig:X509IssuerName>CN=a-sign-corporate-05,OU=a-sign-corporate-05,O=A-Trust Ges. f. Sicherheitssysteme im elektr. Datenverkehr GmbH,C=AT</dsig:X509IssuerName><dsig:X509SerialNumber>700138453</dsig:X509SerialNumber></etsi:IssuerSerial></etsi:Cert></etsi:SigningCertificate><etsi:SignaturePolicyIdentifier><etsi:SignaturePolicyImplied/></etsi:SignaturePolicyIdentifier></etsi:SignedSignatureProperties><etsi:SignedDataObjectProperties><etsi:DataObjectFormat ObjectReference="#reference-1-2"><etsi:MimeType>application/xml</etsi:MimeType></etsi:DataObjectFormat></etsi:SignedDataObjectProperties></etsi:SignedProperties></etsi:QualifyingProperties></dsig:Object></dsig:Signature> </afs:Signatur>
+</afs:BackofficeDaten></afs:EAntrag>

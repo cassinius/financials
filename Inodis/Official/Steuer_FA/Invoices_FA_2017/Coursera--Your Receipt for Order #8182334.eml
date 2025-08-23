@@ -1,0 +1,308 @@
+Delivered-To: bernd.malle@gmail.com
+Received: by 2002:a19:b293:0:0:0:0:0 with SMTP id t19-v6csp985775lfk;
+        Tue, 27 Mar 2018 09:26:34 -0700 (PDT)
+X-Google-Smtp-Source: AIpwx48+MCeR6fMZ6TVGx/aNIudlpy8YpshfT+G2I25p2bzHt7ADeP6fGwx7gQvcRpnB+55tSarS
+X-Received: by 10.200.46.51 with SMTP id r48mr68629qta.8.1522167994499;
+        Tue, 27 Mar 2018 09:26:34 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1522167994; cv=none;
+        d=google.com; s=arc-20160816;
+        b=Nd3TRe3YcJXy6Kf/FsTS9I8dH07m22SyV/MOzow6Z+3qN8pOBYdz3+Xi8VuA7o4E1H
+         3K7MwBiEKz0mXUpJ8AfmV3KUAIe7gVIzAqzd6yKrIiDGqiC2KnU8+Wah9Rn8jw9cY3h6
+         PqMDGVlARrbVBqPlOa42VWeWHlupShWvoPKQI9HQQh1b2Evh6gAAnBw8N3jae6ULE7hE
+         yFnFWPYw+jUxjDpUk9NDsTXCxbVr9V86zhTrZhfVWs7Sa53yfUo5nj4gsd88I6GdbbwZ
+         kzy8X22ibgDgL71eK0RjxXBb6K7NVEg4hd4XbbbkGCCRRqxqgHvpGGgkanDps+Nv/r1L
+         ul6w==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=from:subject:mime-version:date:message-id:to:dkim-signature
+         :arc-authentication-results;
+        bh=oCYOmyE7FqxVHhBckc3Fn23bZ9bcVEZGZ4jtYblWDqA=;
+        b=Ge0+yhAXAryHx4d/k0cHFe3KYmfrvL4EJAMG3mS6YFItcvIhBzrCES6pCl1H3baQLm
+         uIehovwcUK6bucj4iXGH92YTlB+/ZjnfuFb0cONM+Vi2J8HydQBdI4VjVNgBL2WPXads
+         0Bm74rdmzqh/YXrGHj0HEmbRctR1mSe4z5fud+HL8VD/p4++LU730XS2u5kyeRGpZE5e
+         w2mLhSy5AefhkT+8iv07aIgaGUQtFxYFCyE7Pa+rz88I3tAR7xmn+KZ4MQd6Rk6XmzRu
+         h/uBp9EG9A03OwSsvCMgZyVIh0xbvRODQOIV4lmQTdHKfN9nJMQ99wxv37DamKknYy0x
+         Na3g==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@t.mail.coursera.org header.s=scph0616 header.b=dADipYlX;
+       spf=pass (google.com: domain of bounce@t.mail.coursera.org designates 52.40.63.39 as permitted sender) smtp.mailfrom=bounce@t.mail.coursera.org
+Return-Path: <bounce@t.mail.coursera.org>
+Received: from mta1b3.mail.coursera.org (mta1b3.mail.coursera.org. [52.40.63.39])
+        by mx.google.com with ESMTPS id c187si1747764qkd.100.2018.03.27.09.26.34
+        for <bernd.malle@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Tue, 27 Mar 2018 09:26:34 -0700 (PDT)
+Received-SPF: pass (google.com: domain of bounce@t.mail.coursera.org designates 52.40.63.39 as permitted sender) client-ip=52.40.63.39;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@t.mail.coursera.org header.s=scph0616 header.b=dADipYlX;
+       spf=pass (google.com: domain of bounce@t.mail.coursera.org designates 52.40.63.39 as permitted sender) smtp.mailfrom=bounce@t.mail.coursera.org
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=t.mail.coursera.org;
+	s=scph0616; t=1522167993; i=@t.mail.coursera.org;
+	bh=oCYOmyE7FqxVHhBckc3Fn23bZ9bcVEZGZ4jtYblWDqA=;
+	h=To:Date:Subject:From;
+	b=dADipYlXZ/1BbvMh02/RD39MArJK3bnlZoqSQPOS9q3XKVMvmoBkmyaP3MYkmHo4W
+	 jLyECsYmvXZuxBROj8Wl27duKLtj3v41Gf3TNqpqoROobQYLTklWLhSPKBi4iniNuG
+	 Bn1WkE6K/fK/gkX6g4J4iEOyLRGk3YeaIJafTLYA=
+X-MSFBL: oidAX2eKqAGMYX4zqiYwBq3h1OjJKMpvSYMIu7oTzWQ=|eyJtZXNzYWdlX2lkIjo
+	iMDAwNmI5NzBiYTVhZTQ0ZGIxODgiLCJ0ZW5hbnRfaWQiOiJjb3Vyc2VyYSIsInI
+	iOiJiZXJuZC5tYWxsZUBnbWFpbC5jb20iLCJzdWJhY2NvdW50X2lkIjoiMCIsImN
+	1c3RvbWVyX2lkIjoiMSJ9
+To: "Bernd Malle" <bernd.malle@gmail.com>
+Message-ID: <1B.88.19940.9B07ABA5@f.mta2vrest.cc.prd.sparkpost>
+Date: Tue, 27 Mar 2018 16:26:33 +0000
+Content-Type: multipart/alternative; boundary="_----q2iSuEOYl0iwX+/QzDGKug===_9A/88-19940-9B07ABA5"
+MIME-Version: 1.0
+Subject: Your Receipt for Order #8182334
+From: "Coursera" <no-reply@t.mail.coursera.org>
+
+--_----q2iSuEOYl0iwX+/QzDGKug===_9A/88-19940-9B07ABA5
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/plain; charset="UTF-8"
+
+<https://eventing.coursera.org/redirectSigned/eyJrZXkiOiJlbWFpbC5saW5rLm9wZ=
+W4iLCJ2YWx1ZSI6eyJ1cmwiOiJodHRwczovL3d3dy5jb3Vyc2VyYS5vcmcvP3V0bV9tZWRpdW09=
+ZW1haWwmdXRtX3NvdXJjZT1vdGhlciZ1dG1fY2FtcGFpZ249cGF5bWVudC5yZWNlaXB0Lm5LNEl=
+1REhiRWVpcnd3NkxWOGZneGciLCJ0cmFja2luZyI6eyJ1c2VySWQiOjMxMzk5ODAsInVzZXJFbW=
+FpbCI6ImJlcm5kLm1hbGxlQGdtYWlsLmNvbSIsIm5vdGlmaWNhdGlvblR5cGUiOiJwYXltZW50X=
+3JlY2VpcHQuZ2VuZXJpY19idXkiLCJjYW1wYWlnbklkIjoicGF5bWVudC5yZWNlaXB0Lm5LNEl1=
+REhiRWVpcnd3NkxWOGZneGciLCJsaW5rcyI6W119fSwidXNlcklkIjozMTM5OTgwfQ.6OLWSBCl=
+4TQhoDBl4S_VG9m6RaZ-n2KAulTGvfbAMr0>=0D=0A=0D=0A=0D=0ADear Bernd Malle,=0D=
+=0A=0D=0AThank you for your purchase.=0D=0A=0D=0ARECEIPT=0D=0A=0D=0ACourser=
+a Inc.=0D=0A381 E. Evelyn Avenue=0D=0AMountain View, CA 94041 USA=0D=0A=0D=
+=0A08-13-2017=0D=0AOrder Number: 8182334=0D=0AProduct Details =09Price =09Q=
+ty=0D=0ASubscription: 'Recommender Systems' =09EUR 44.00 =091=0D=0A=0D=0ATO=
+TAL (EUR): 44.00=0D=0A=0D=0APlease keep this receipt as record of your paym=
+ent.=0D=0A=0D=0AView our refund policy=0D=0A<https://eventing.coursera.org/=
+redirectSigned/eyJrZXkiOiJlbWFpbC5saW5rLm9wZW4iLCJ2YWx1ZSI6eyJ1cmwiOiJodHRw=
+czovL3d3dy5jb3Vyc2VyYS5vcmcvYWJvdXQvdGVybXMvcmVmdW5kP3V0bV9tZWRpdW09ZW1haWw=
+mdXRtX3NvdXJjZT1vdGhlciZ1dG1fY2FtcGFpZ249cGF5bWVudC5yZWNlaXB0Lm5LNEl1REhiRW=
+Vpcnd3NkxWOGZneGciLCJ0cmFja2luZyI6eyJ1c2VySWQiOjMxMzk5ODAsInVzZXJFbWFpbCI6I=
+mJlcm5kLm1hbGxlQGdtYWlsLmNvbSIsIm5vdGlmaWNhdGlvblR5cGUiOiJwYXltZW50X3JlY2Vp=
+cHQuZ2VuZXJpY19idXkiLCJjYW1wYWlnbklkIjoicGF5bWVudC5yZWNlaXB0Lm5LNEl1REhiRWV=
+pcnd3NkxWOGZneGciLCJsaW5rcyI6W119fSwidXNlcklkIjozMTM5OTgwfQ.lZGm4vIvmY1rwMo=
+xLSNs0haDFKLLW5OWk4czPx9JoCA> =0D=0A.=0D=0A=0D=0AView your purchase history=
+=0D=0A<https://eventing.coursera.org/redirectSigned/eyJrZXkiOiJlbWFpbC5saW5=
+rLm9wZW4iLCJ2YWx1ZSI6eyJ1cmwiOiJodHRwczovL3d3dy5jb3Vyc2VyYS5vcmcvbXktcHVyY2=
+hhc2VzL3RyYW5zYWN0aW9ucz91dG1fbWVkaXVtPWVtYWlsJnV0bV9zb3VyY2U9b3RoZXImdXRtX=
+2NhbXBhaWduPXBheW1lbnQucmVjZWlwdC5uSzRJdURIYkVlaXJ3dzZMVjhmZ3hnIiwidHJhY2tp=
+bmciOnsidXNlcklkIjozMTM5OTgwLCJ1c2VyRW1haWwiOiJiZXJuZC5tYWxsZUBnbWFpbC5jb20=
+iLCJub3RpZmljYXRpb25UeXBlIjoicGF5bWVudF9yZWNlaXB0LmdlbmVyaWNfYnV5IiwiY2FtcG=
+FpZ25JZCI6InBheW1lbnQucmVjZWlwdC5uSzRJdURIYkVlaXJ3dzZMVjhmZ3hnIiwibGlua3MiO=
+ltdfX0sInVzZXJJZCI6MzEzOTk4MH0.SoA_OSVbxN5l9TtfeWfqEqHSUl6Us7Kxjq0rUseMva0>=
+ =0D=0A.=0D=0A=0D=0AHappy Learning!=0D=0AThe Coursera Team=0D=0A=0D=0ANeed =
+help=3F Contact Us.=0D=0A<https://eventing.coursera.org/redirectSigned/eyJr=
+ZXkiOiJlbWFpbC5saW5rLm9wZW4iLCJ2YWx1ZSI6eyJ1cmwiOiJodHRwczovL2NvdXJzZXJhaGV=
+scC56ZW5kZXNrLmNvbS9oYy9lbi11cy9yZXF1ZXN0cy9uZXc_dXRtX21lZGl1bT1lbWFpbCZ1dG=
+1fc291cmNlPW90aGVyJnV0bV9jYW1wYWlnbj1wYXltZW50LnJlY2VpcHQubks0SXVESGJFZWlyd=
+3c2TFY4Zmd4ZyIsInRyYWNraW5nIjp7InVzZXJJZCI6MzEzOTk4MCwidXNlckVtYWlsIjoiYmVy=
+bmQubWFsbGVAZ21haWwuY29tIiwibm90aWZpY2F0aW9uVHlwZSI6InBheW1lbnRfcmVjZWlwdC5=
+nZW5lcmljX2J1eSIsImNhbXBhaWduSWQiOiJwYXltZW50LnJlY2VpcHQubks0SXVESGJFZWlyd3=
+c2TFY4Zmd4ZyIsImxpbmtzIjpbXX19LCJ1c2VySWQiOjMxMzk5ODB9.VVT_tymsFGrlBQW6ZL5a=
+WJTGNJ348XCilhaFhu2y-Xg>=0D=0A[facebook]=0D=0A<https://eventing.coursera.or=
+g/redirectSigned/eyJrZXkiOiJlbWFpbC5saW5rLm9wZW4iLCJ2YWx1ZSI6eyJ1cmwiOiJodH=
+RwOi8vd3d3LmZhY2Vib29rLmNvbS9Db3Vyc2VyYT91dG1fbWVkaXVtPWVtYWlsJnV0bV9zb3VyY=
+2U9b3RoZXImdXRtX2NhbXBhaWduPXBheW1lbnQucmVjZWlwdC5uSzRJdURIYkVlaXJ3dzZMVjhm=
+Z3hnIiwidHJhY2tpbmciOnsidXNlcklkIjozMTM5OTgwLCJ1c2VyRW1haWwiOiJiZXJuZC5tYWx=
+sZUBnbWFpbC5jb20iLCJub3RpZmljYXRpb25UeXBlIjoicGF5bWVudF9yZWNlaXB0LmdlbmVyaW=
+NfYnV5IiwiY2FtcGFpZ25JZCI6InBheW1lbnQucmVjZWlwdC5uSzRJdURIYkVlaXJ3dzZMVjhmZ=
+3hnIiwibGlua3MiOltdfX0sInVzZXJJZCI6MzEzOTk4MH0.aNc2-iNwaXDQCAtRUNSqPSh1cbml=
+HfNHze_oFcIzJ7E> =0D=0A[twitter]=0D=0A<https://eventing.coursera.org/redire=
+ctSigned/eyJrZXkiOiJlbWFpbC5saW5rLm9wZW4iLCJ2YWx1ZSI6eyJ1cmwiOiJodHRwczovL3=
+R3aXR0ZXIuY29tL2NvdXJzZXJhP3V0bV9tZWRpdW09ZW1haWwmdXRtX3NvdXJjZT1vdGhlciZ1d=
+G1fY2FtcGFpZ249cGF5bWVudC5yZWNlaXB0Lm5LNEl1REhiRWVpcnd3NkxWOGZneGciLCJ0cmFj=
+a2luZyI6eyJ1c2VySWQiOjMxMzk5ODAsInVzZXJFbWFpbCI6ImJlcm5kLm1hbGxlQGdtYWlsLmN=
+vbSIsIm5vdGlmaWNhdGlvblR5cGUiOiJwYXltZW50X3JlY2VpcHQuZ2VuZXJpY19idXkiLCJjYW=
+1wYWlnbklkIjoicGF5bWVudC5yZWNlaXB0Lm5LNEl1REhiRWVpcnd3NkxWOGZneGciLCJsaW5rc=
+yI6W119fSwidXNlcklkIjozMTM5OTgwfQ.kEvc1K-Gli4b_HBDeD5C1gzVXdpK3Paa5gMVovXrM=
+qg> =0D=0A[blog]=0D=0A<https://eventing.coursera.org/redirectSigned/eyJrZXk=
+iOiJlbWFpbC5saW5rLm9wZW4iLCJ2YWx1ZSI6eyJ1cmwiOiJodHRwOi8vYmxvZy5jb3Vyc2VyYS=
+5vcmc_dXRtX21lZGl1bT1lbWFpbCZ1dG1fc291cmNlPW90aGVyJnV0bV9jYW1wYWlnbj1wYXltZ=
+W50LnJlY2VpcHQubks0SXVESGJFZWlyd3c2TFY4Zmd4ZyIsInRyYWNraW5nIjp7InVzZXJJZCI6=
+MzEzOTk4MCwidXNlckVtYWlsIjoiYmVybmQubWFsbGVAZ21haWwuY29tIiwibm90aWZpY2F0aW9=
+uVHlwZSI6InBheW1lbnRfcmVjZWlwdC5nZW5lcmljX2J1eSIsImNhbXBhaWduSWQiOiJwYXltZW=
+50LnJlY2VpcHQubks0SXVESGJFZWlyd3c2TFY4Zmd4ZyIsImxpbmtzIjpbXX19LCJ1c2VySWQiO=
+jMxMzk5ODB9.7FCbmLRYC4OQjPpiS0VyGHU88WHbC33e84EMlxzB_Ig> =0D=0A[blog]=0D=0A=
+<https://eventing.coursera.org/redirectSigned/eyJrZXkiOiJlbWFpbC5saW5rLm9wZ=
+W4iLCJ2YWx1ZSI6eyJ1cmwiOiJodHRwczovL3BsdXMuZ29vZ2xlLmNvbS8xMTE5NTA1OTQwMzky=
+NjkyODE0NjkvcG9zdHM_dXRtX21lZGl1bT1lbWFpbCZ1dG1fc291cmNlPW90aGVyJnV0bV9jYW1=
+wYWlnbj1wYXltZW50LnJlY2VpcHQubks0SXVESGJFZWlyd3c2TFY4Zmd4ZyIsInRyYWNraW5nIj=
+p7InVzZXJJZCI6MzEzOTk4MCwidXNlckVtYWlsIjoiYmVybmQubWFsbGVAZ21haWwuY29tIiwib=
+m90aWZpY2F0aW9uVHlwZSI6InBheW1lbnRfcmVjZWlwdC5nZW5lcmljX2J1eSIsImNhbXBhaWdu=
+SWQiOiJwYXltZW50LnJlY2VpcHQubks0SXVESGJFZWlyd3c2TFY4Zmd4ZyIsImxpbmtzIjpbXX1=
+9LCJ1c2VySWQiOjMxMzk5ODB9.FwfAbMmyKpd9FU-n51RbVdpUIPUnP0StmRcCTh9W2Cg>=0D=
+=0AVisit support=0D=0A<https://eventing.coursera.org/redirectSigned/eyJrZXk=
+iOiJlbWFpbC5saW5rLm9wZW4iLCJ2YWx1ZSI6eyJ1cmwiOiJodHRwczovL2NvdXJzZXJhaGVscC=
+56ZW5kZXNrLmNvbS9oYz91dG1fbWVkaXVtPWVtYWlsJnV0bV9zb3VyY2U9b3RoZXImdXRtX2Nhb=
+XBhaWduPXBheW1lbnQucmVjZWlwdC5uSzRJdURIYkVlaXJ3dzZMVjhmZ3hnIiwidHJhY2tpbmci=
+OnsidXNlcklkIjozMTM5OTgwLCJ1c2VyRW1haWwiOiJiZXJuZC5tYWxsZUBnbWFpbC5jb20iLCJ=
+ub3RpZmljYXRpb25UeXBlIjoicGF5bWVudF9yZWNlaXB0LmdlbmVyaWNfYnV5IiwiY2FtcGFpZ2=
+5JZCI6InBheW1lbnQucmVjZWlwdC5uSzRJdURIYkVlaXJ3dzZMVjhmZ3hnIiwibGlua3MiOltdf=
+X0sInVzZXJJZCI6MzEzOTk4MH0.-EOHJxJDaiASy85lYIBVsvUUwBJCNp5dXL5cJ0zZYXs> =0D=
+=0A=E2=80=A2 Please do not reply directly to this email=0D=0ACopyright (c) =
+2018 Coursera, Inc | 381 E. Evelyn Avenue, Mountain View, CA =0D=0A94041 US=
+A
+--_----q2iSuEOYl0iwX+/QzDGKug===_9A/88-19940-9B07ABA5
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/html; charset="UTF-8"
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.=
+w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html><head><meta http-equiv=
+=3D"Content-Type" content=3D"text/html; charset=3DUTF-8"/><style type=3D"te=
+xt/css">/* Client-specific Styles */=0A#outlook a{padding:0;} /* Force Outl=
+ook to provide a "view in browser" button. */=0Abody{width:100% !i mportant=
+;} .ReadMsgBody{width:100%;} .ExternalClass{width:100%;} /* Force Hotmail t=
+o display emails at full width */=0Abody{-webkit-text-size-adjust:none;} /*=
+ Prevent Webkit platforms from changing default text sizes. */=0A/* Reset S=
+tyles */=0Abody{margin:0; padding:0;}=0Aimg{border:0; height:auto; line-hei=
+ght:100%; outline:none; text-decoration:none;}=0Atable td{border-collapse:c=
+ollapse;}=0A#backgroundTable{height:100% !important; margin:0; padding:0; w=
+idth:100% !important;}=0Ap {margin-top: 14px; margin-bottom: 14px;}=0A=0A/*=
+ /\/\/\/\/\/\/\/\/\/\ STANDARD STYLING: PREHEADER /\/\/\/\/\/\/\/\/\/\ */=
+=0A.preheaderContent div a:link, .preheaderContent div a:visited, /* Yahoo!=
+ Mail Override */ .preheaderContent div a .yshortcuts /* Yahoo! Mail Overri=
+de */{=0A  color: #3b6e8f;=0A  font-weight:normal;=0A  text-decoration:unde=
+rline;=0A}=0A/* /\/\/\/\/\/\/\/\/\/\ STANDARD STYLING: TEMPLATE CONTAINER 6=
+00px/\/\/\/\/\/\/\/\/\/\ */=0A#templateContainer{=0A  border: 1px solid #DD=
+DDDD;=0A  background-color:#FFFFFF;=0A}=0A.mainContent a:link, a:visited{=
+=0A  color:#336699;=0A}=0A/* /\/\/\/\/\/\/\/\/\/\ STANDARD STYLING: FOOTER =
+LINKS /\/\/\/\/\/\/\/\/\/\ */=0A.footerContent div a:link, .footerContent d=
+iv a:visited, /* Yahoo! Mail Override */ .footerContent div a .yshortcuts /=
+* Yahoo! Mail Override */{=0A  /*@editable*/ color:#336699;=0A  /*@editable=
+*/ font-weight:normal;=0A  /*@editable*/ text-decoration:underline;=0A}</st=
+yle></head><body><center><table id=3D"backgroundTable" border=3D"0" cellpad=
+ding=3D"0" cellspacing=3D"0" width=3D"100%" style=3D"background-color: #efe=
+fef;" height=3D"100%"><tr><td valign=3D"top" align=3D"center"><table border=
+=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"600"><table id=3D"templ=
+ateContainer" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"600=
+" style=3D"border: 1px solid #dddddd;background-color:#ffffff;margin-top:20=
+px;"><tr><td class=3D"preheaderContent" valign=3D"middle" align=3D"left"><a=
+ href=3D"https://eventing.coursera.org/redirectSigned/eyJrZXkiOiJlbWFpbC5sa=
+W5rLm9wZW4iLCJ2YWx1ZSI6eyJ1cmwiOiJodHRwczovL3d3dy5jb3Vyc2VyYS5vcmcvP3V0bV9t=
+ZWRpdW09ZW1haWwmdXRtX3NvdXJjZT1vdGhlciZ1dG1fY2FtcGFpZ249cGF5bWVudC5yZWNlaXB=
+0Lm5LNEl1REhiRWVpcnd3NkxWOGZneGciLCJ0cmFja2luZyI6eyJ1c2VySWQiOjMxMzk5ODAsIn=
+VzZXJFbWFpbCI6ImJlcm5kLm1hbGxlQGdtYWlsLmNvbSIsIm5vdGlmaWNhdGlvblR5cGUiOiJwY=
+XltZW50X3JlY2VpcHQuZ2VuZXJpY19idXkiLCJjYW1wYWlnbklkIjoicGF5bWVudC5yZWNlaXB0=
+Lm5LNEl1REhiRWVpcnd3NkxWOGZneGciLCJsaW5rcyI6W119fSwidXNlcklkIjozMTM5OTgwfQ.=
+6OLWSBCl4TQhoDBl4S_VG9m6RaZ-n2KAulTGvfbAMr0" target=3D"_blank"><img src=3D"=
+https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://c=
+oursera-misc.s3.amazonaws.com/emails/coursera_logo.png=3Fw=3D150&amp;h=3D22=
+&amp;fit=3Dscale" style=3D"padding:25px 20px 20px 15px;"/></a></td></tr><tr=
+><td class=3D"mainContent" colspan=3D"2" valign=3D"top" style=3D"padding: 1=
+0px 30px 20px 30px; font-family: Arial; color: #efefef; font-size: 14px; li=
+ne-height: 1.5em;" align=3D"left"><div style=3D"font-size: 14px; line-heigh=
+t: 1.6em; color: #444444; text-align: left; padding-top: 15px"><p>Dear Bern=
+d Malle,</p><p>Thank you for your purchase.</p><p style=3D"font-weight: bol=
+d;">RECEIPT</p><div style=3D"font-size: 14px; line-height: 18px;">Coursera =
+Inc.<br/>381 E. Evelyn Avenue<br/>Mountain View, CA 94041 USA<br/><br/><spa=
+n>08-13-2017</span><br/>Order Number: 8182334<br/></div><table border=3D"0"=
+ cellpadding=3D"2" width=3D"480px" style=3D"margin-top:10px; font-size: 13p=
+x;"><colgroup><col width=3D"320"/><col width=3D"100"/><col width=3D"80"/></=
+colgroup><tbody><tr><td><b>Product Details</b></td><td><b>Price</b></td><td=
+><b>Qty</b></td></tr><tr><td style=3D"padding-right: 15px;">Subscription: '=
+Recommender Systems'</td><td>EUR 44.00</td><td>1</td></tr></tbody></table><=
+p style=3D"font-weight: bold;">TOTAL (EUR): 44.00</p><p style=3D"font-size:=
+ 13px; line-height: 16px;"></p><p>Please keep this receipt as record of you=
+r payment.</p><p>View our&nbsp;<a href=3D"https://eventing.coursera.org/red=
+irectSigned/eyJrZXkiOiJlbWFpbC5saW5rLm9wZW4iLCJ2YWx1ZSI6eyJ1cmwiOiJodHRwczo=
+vL3d3dy5jb3Vyc2VyYS5vcmcvYWJvdXQvdGVybXMvcmVmdW5kP3V0bV9tZWRpdW09ZW1haWwmdX=
+RtX3NvdXJjZT1vdGhlciZ1dG1fY2FtcGFpZ249cGF5bWVudC5yZWNlaXB0Lm5LNEl1REhiRWVpc=
+nd3NkxWOGZneGciLCJ0cmFja2luZyI6eyJ1c2VySWQiOjMxMzk5ODAsInVzZXJFbWFpbCI6ImJl=
+cm5kLm1hbGxlQGdtYWlsLmNvbSIsIm5vdGlmaWNhdGlvblR5cGUiOiJwYXltZW50X3JlY2VpcHQ=
+uZ2VuZXJpY19idXkiLCJjYW1wYWlnbklkIjoicGF5bWVudC5yZWNlaXB0Lm5LNEl1REhiRWVpcn=
+d3NkxWOGZneGciLCJsaW5rcyI6W119fSwidXNlcklkIjozMTM5OTgwfQ.lZGm4vIvmY1rwMoxLS=
+Ns0haDFKLLW5OWk4czPx9JoCA" >refund policy</a>.</p><p>View your&nbsp;<a href=
+=3D"https://eventing.coursera.org/redirectSigned/eyJrZXkiOiJlbWFpbC5saW5rLm=
+9wZW4iLCJ2YWx1ZSI6eyJ1cmwiOiJodHRwczovL3d3dy5jb3Vyc2VyYS5vcmcvbXktcHVyY2hhc=
+2VzL3RyYW5zYWN0aW9ucz91dG1fbWVkaXVtPWVtYWlsJnV0bV9zb3VyY2U9b3RoZXImdXRtX2Nh=
+bXBhaWduPXBheW1lbnQucmVjZWlwdC5uSzRJdURIYkVlaXJ3dzZMVjhmZ3hnIiwidHJhY2tpbmc=
+iOnsidXNlcklkIjozMTM5OTgwLCJ1c2VyRW1haWwiOiJiZXJuZC5tYWxsZUBnbWFpbC5jb20iLC=
+Jub3RpZmljYXRpb25UeXBlIjoicGF5bWVudF9yZWNlaXB0LmdlbmVyaWNfYnV5IiwiY2FtcGFpZ=
+25JZCI6InBheW1lbnQucmVjZWlwdC5uSzRJdURIYkVlaXJ3dzZMVjhmZ3hnIiwibGlua3MiOltd=
+fX0sInVzZXJJZCI6MzEzOTk4MH0.SoA_OSVbxN5l9TtfeWfqEqHSUl6Us7Kxjq0rUseMva0" >p=
+urchase history</a>.</p><p>Happy Learning!<br/>The Coursera Team</p><small>=
+Need help=3F&nbsp;<a href=3D"https://eventing.coursera.org/redirectSigned/e=
+yJrZXkiOiJlbWFpbC5saW5rLm9wZW4iLCJ2YWx1ZSI6eyJ1cmwiOiJodHRwczovL2NvdXJzZXJh=
+aGVscC56ZW5kZXNrLmNvbS9oYy9lbi11cy9yZXF1ZXN0cy9uZXc_dXRtX21lZGl1bT1lbWFpbCZ=
+1dG1fc291cmNlPW90aGVyJnV0bV9jYW1wYWlnbj1wYXltZW50LnJlY2VpcHQubks0SXVESGJFZW=
+lyd3c2TFY4Zmd4ZyIsInRyYWNraW5nIjp7InVzZXJJZCI6MzEzOTk4MCwidXNlckVtYWlsIjoiY=
+mVybmQubWFsbGVAZ21haWwuY29tIiwibm90aWZpY2F0aW9uVHlwZSI6InBheW1lbnRfcmVjZWlw=
+dC5nZW5lcmljX2J1eSIsImNhbXBhaWduSWQiOiJwYXltZW50LnJlY2VpcHQubks0SXVESGJFZWl=
+yd3c2TFY4Zmd4ZyIsImxpbmtzIjpbXX19LCJ1c2VySWQiOjMxMzk5ODB9.VVT_tymsFGrlBQW6Z=
+L5aWJTGNJ348XCilhaFhu2y-Xg" >Contact Us.</a></small></div></td></tr></table=
+><table id=3D"templatePreheader" border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0" width=3D"600" style=3D"background-color: #efefef; border: 0; border-=
+bottom: 0; margin-top: 20px;"><tr><td style=3D"vertical-align: top; text-al=
+ign: center;"><div><a href=3D"https://eventing.coursera.org/redirectSigned/=
+eyJrZXkiOiJlbWFpbC5saW5rLm9wZW4iLCJ2YWx1ZSI6eyJ1cmwiOiJodHRwOi8vd3d3LmZhY2V=
+ib29rLmNvbS9Db3Vyc2VyYT91dG1fbWVkaXVtPWVtYWlsJnV0bV9zb3VyY2U9b3RoZXImdXRtX2=
+NhbXBhaWduPXBheW1lbnQucmVjZWlwdC5uSzRJdURIYkVlaXJ3dzZMVjhmZ3hnIiwidHJhY2tpb=
+mciOnsidXNlcklkIjozMTM5OTgwLCJ1c2VyRW1haWwiOiJiZXJuZC5tYWxsZUBnbWFpbC5jb20i=
+LCJub3RpZmljYXRpb25UeXBlIjoicGF5bWVudF9yZWNlaXB0LmdlbmVyaWNfYnV5IiwiY2FtcGF=
+pZ25JZCI6InBheW1lbnQucmVjZWlwdC5uSzRJdURIYkVlaXJ3dzZMVjhmZ3hnIiwibGlua3MiOl=
+tdfX0sInVzZXJJZCI6MzEzOTk4MH0.aNc2-iNwaXDQCAtRUNSqPSh1cbmlHfNHze_oFcIzJ7E" =
+rel=3D"nofollow" style=3D"margin: 0 7px;" target=3D"_blank"><img src=3D"htt=
+ps://dt5zaw6a98blc.cloudfront.net/site-static/images/footer/facebook.png" a=
+lt=3D"facebook" width=3D"24" style=3D"border: none; width: 24px; height: 24=
+px; opacity: 0.6;" height=3D"24"/></a><a href=3D"https://eventing.coursera.=
+org/redirectSigned/eyJrZXkiOiJlbWFpbC5saW5rLm9wZW4iLCJ2YWx1ZSI6eyJ1cmwiOiJo=
+dHRwczovL3R3aXR0ZXIuY29tL2NvdXJzZXJhP3V0bV9tZWRpdW09ZW1haWwmdXRtX3NvdXJjZT1=
+vdGhlciZ1dG1fY2FtcGFpZ249cGF5bWVudC5yZWNlaXB0Lm5LNEl1REhiRWVpcnd3NkxWOGZneG=
+ciLCJ0cmFja2luZyI6eyJ1c2VySWQiOjMxMzk5ODAsInVzZXJFbWFpbCI6ImJlcm5kLm1hbGxlQ=
+GdtYWlsLmNvbSIsIm5vdGlmaWNhdGlvblR5cGUiOiJwYXltZW50X3JlY2VpcHQuZ2VuZXJpY19i=
+dXkiLCJjYW1wYWlnbklkIjoicGF5bWVudC5yZWNlaXB0Lm5LNEl1REhiRWVpcnd3NkxWOGZneGc=
+iLCJsaW5rcyI6W119fSwidXNlcklkIjozMTM5OTgwfQ.kEvc1K-Gli4b_HBDeD5C1gzVXdpK3Pa=
+a5gMVovXrMqg" rel=3D"nofollow" style=3D"margin: 0 7px;" target=3D"_blank"><=
+img src=3D"https://dt5zaw6a98blc.cloudfront.net/site-static/images/footer/t=
+witter.png" alt=3D"twitter" width=3D"24" style=3D"border: none; width: 24px=
+; height: 24px; opacity: 0.6;" height=3D"24"/></a><a href=3D"https://eventi=
+ng.coursera.org/redirectSigned/eyJrZXkiOiJlbWFpbC5saW5rLm9wZW4iLCJ2YWx1ZSI6=
+eyJ1cmwiOiJodHRwOi8vYmxvZy5jb3Vyc2VyYS5vcmc_dXRtX21lZGl1bT1lbWFpbCZ1dG1fc29=
+1cmNlPW90aGVyJnV0bV9jYW1wYWlnbj1wYXltZW50LnJlY2VpcHQubks0SXVESGJFZWlyd3c2TF=
+Y4Zmd4ZyIsInRyYWNraW5nIjp7InVzZXJJZCI6MzEzOTk4MCwidXNlckVtYWlsIjoiYmVybmQub=
+WFsbGVAZ21haWwuY29tIiwibm90aWZpY2F0aW9uVHlwZSI6InBheW1lbnRfcmVjZWlwdC5nZW5l=
+cmljX2J1eSIsImNhbXBhaWduSWQiOiJwYXltZW50LnJlY2VpcHQubks0SXVESGJFZWlyd3c2TFY=
+4Zmd4ZyIsImxpbmtzIjpbXX19LCJ1c2VySWQiOjMxMzk5ODB9.7FCbmLRYC4OQjPpiS0VyGHU88=
+WHbC33e84EMlxzB_Ig" rel=3D"nofollow" style=3D"margin: 0 7px;" target=3D"_bl=
+ank"><img src=3D"https://dt5zaw6a98blc.cloudfront.net/site-static/images/fo=
+oter/blog.png" alt=3D"blog" width=3D"24" style=3D"border: none; width: 24px=
+; height: 24px; opacity: 0.6;" height=3D"24"/></a><a href=3D"https://eventi=
+ng.coursera.org/redirectSigned/eyJrZXkiOiJlbWFpbC5saW5rLm9wZW4iLCJ2YWx1ZSI6=
+eyJ1cmwiOiJodHRwczovL3BsdXMuZ29vZ2xlLmNvbS8xMTE5NTA1OTQwMzkyNjkyODE0NjkvcG9=
+zdHM_dXRtX21lZGl1bT1lbWFpbCZ1dG1fc291cmNlPW90aGVyJnV0bV9jYW1wYWlnbj1wYXltZW=
+50LnJlY2VpcHQubks0SXVESGJFZWlyd3c2TFY4Zmd4ZyIsInRyYWNraW5nIjp7InVzZXJJZCI6M=
+zEzOTk4MCwidXNlckVtYWlsIjoiYmVybmQubWFsbGVAZ21haWwuY29tIiwibm90aWZpY2F0aW9u=
+VHlwZSI6InBheW1lbnRfcmVjZWlwdC5nZW5lcmljX2J1eSIsImNhbXBhaWduSWQiOiJwYXltZW5=
+0LnJlY2VpcHQubks0SXVESGJFZWlyd3c2TFY4Zmd4ZyIsImxpbmtzIjpbXX19LCJ1c2VySWQiOj=
+MxMzk5ODB9.FwfAbMmyKpd9FU-n51RbVdpUIPUnP0StmRcCTh9W2Cg" rel=3D"nofollow" st=
+yle=3D"margin: 0 7px;" target=3D"_blank"><img src=3D"https://dt5zaw6a98blc.=
+cloudfront.net/site-static/images/footer/googleplus.png" alt=3D"blog" width=
+=3D"24" style=3D"border: none; width: 24px; height: 24px; opacity: 0.6;" he=
+ight=3D"24"/></a></div></td></tr><tr><td class=3D"footerContent" style=3D"c=
+olor: #707070; font-family: Arial; font-size: 12px; line-height: 125%; text=
+-align: center; padding: 20px 0;"><div>Visit <a href=3D"https://eventing.co=
+ursera.org/redirectSigned/eyJrZXkiOiJlbWFpbC5saW5rLm9wZW4iLCJ2YWx1ZSI6eyJ1c=
+mwiOiJodHRwczovL2NvdXJzZXJhaGVscC56ZW5kZXNrLmNvbS9oYz91dG1fbWVkaXVtPWVtYWls=
+JnV0bV9zb3VyY2U9b3RoZXImdXRtX2NhbXBhaWduPXBheW1lbnQucmVjZWlwdC5uSzRJdURIYkV=
+laXJ3dzZMVjhmZ3hnIiwidHJhY2tpbmciOnsidXNlcklkIjozMTM5OTgwLCJ1c2VyRW1haWwiOi=
+JiZXJuZC5tYWxsZUBnbWFpbC5jb20iLCJub3RpZmljYXRpb25UeXBlIjoicGF5bWVudF9yZWNla=
+XB0LmdlbmVyaWNfYnV5IiwiY2FtcGFpZ25JZCI6InBheW1lbnQucmVjZWlwdC5uSzRJdURIYkVl=
+aXJ3dzZMVjhmZ3hnIiwibGlua3MiOltdfX0sInVzZXJJZCI6MzEzOTk4MH0.-EOHJxJDaiASy85=
+lYIBVsvUUwBJCNp5dXL5cJ0zZYXs" rel=3D"nofollow" style=3D"color: #3b6e8f;" ta=
+rget=3D"_blank"><span class=3D"yshortcuts">support</span></a> =E2=80=A2  Pl=
+ease do not reply directly to this email</div></td></tr><tr><td class=3D"fo=
+oterContent" style=3D"color:#808080; font-size:12px; line-height:150%; padd=
+ing-top:0; padding-right:0; padding-bottom:20px; padding-left:0; text-align=
+:center;" valign=3D"top"><em>Copyright (c) 2018 Coursera, Inc</em>&nbsp;|&n=
+bsp;381 E. Evelyn Avenue, Mountain View, CA 94041 USA</td></tr></table></ta=
+ble></td></tr></table></center><img src=3D"https://eventing.coursera.org/im=
+g/jsLsMInOmg-iVqoKd7C0pIBlLFmbqMdD4OWRmZk0874iCtN5jacQoyMYoqbgZTZ06eNZTrHts=
+oAdRkXs6e9Q9w.VYbVxsE26Kwh5OF8Pbqn3A.gDvLegJ7xgttXlo6mpj7DEf7j0JZbcJrofGiHG=
+UJXs-NYINaT2XUNu9tlRecbcG-9iDnMrF6wn3eL5E_W6WU7tRxHhv7hVCI64ljg4vWncVKbWGbk=
+DNTf8Z7GLBdcEs3JLU0xsPnyKSdl-dkrWLj3H9-Ody6Z-SZ_UuBYAVet6TO8JBt6WcKWkgKhX1B=
+FI522htyHIcz67BGaDChamMxtuP8S4-3aU7slk3Zr8Xn2FCvUzZcnubylgvmDi3LFZe6D4IJ2M6=
+9LT9lQMOoGB18jh0N2ROEm5_SmtPTioBbLrGbkM8eNVIcvuRHMJbGQJpe" border=3D"0" wid=
+th=3D"1" height=3D"1">=0D=0A<img border=3D"0" width=3D"1" height=3D"1" alt=
+=3D"" src=3D"http://click.mail.coursera.org/q/1fDCyqXFWzQBD0pmKRcYuQ~~/AAAA=
+AQA~/RgRcnPW5PlcIY291cnNlcmFYBAAAAABCCgAGuXC6WuRNsYhSFWJlcm5kLm1hbGxlQGdtYW=
+lsLmNvbQ~~">=0D=0A</body></html>
+--_----q2iSuEOYl0iwX+/QzDGKug===_9A/88-19940-9B07ABA5--
+

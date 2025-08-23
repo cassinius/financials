@@ -1,0 +1,95 @@
+﻿<html xmlns="http://www.w3.org/TR/REC-html40" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:x="urn:schemas-microsoft-com:office:excel" xmlns:d="http://schemas.datacontract.org/2004/07/DAIS.eBank.Client.WEB.mvc.Payments.Models" xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+  <head>
+    <META http-equiv="Content-Type" content="application/vnd.ms-excel; charset=utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+          table
+          {mso-displayed-decimal-separator:"\,";
+          mso-displayed-thousand-separator:" ";}
+          .excelNum
+          {mso-number-format:"0\.00";}
+          .excelLong
+          {mso-number-format:"0";}
+          .text 
+          {mso-number-format: "\@";}
+        </style>
+  </head>
+  <body>
+    <table border="1" xmlns="">
+      <tr style="height:50px">
+        <td colspan="3">
+          <b>Beneficiary name</b>
+        </td>
+        <td align="right">
+          <b>Total amount</b>
+        </td>
+        <td align="right">
+          <b>Currency</b>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="3">ЛЕМЪНФАЙ ЕООД</td>
+        <td align="right" class="excelNum">50,99</td>
+        <td>EUR</td>
+      </tr>
+      <tr>
+        <td colspan="3" align="right">
+          <b>Total</b>
+        </td>
+        <td align="right" class="excelNum">
+          <b>50,99</b>
+        </td>
+        <td>
+          <b>EUR</b>
+        </td>
+      </tr>
+    </table>
+    <br xmlns="" />
+    <table border="1" xmlns="">
+      <tr align="right">
+        <td>
+          <b>Type</b>
+        </td>
+        <td>
+          <b>Description</b>
+        </td>
+        <td>
+          <b>From</b>
+        </td>
+        <td>
+          <b>Payer</b>
+        </td>
+        <td>
+          <b>To</b>
+        </td>
+        <td>
+          <b>Beneficiary name</b>
+        </td>
+        <td>
+          <b>Creation date</b>
+        </td>
+        <td>
+          <b>Execute Date</b>
+        </td>
+        <td>
+          <b>Amount</b>
+        </td>
+        <td>
+          <b>Currency</b>
+        </td>
+      </tr>
+      <tr align="right">
+        <td>Exchange</td>
+        <td class="text"></td>
+        <td>BG54STSA93000030859280</td>
+        <td>ЛЕМЪНФАЙ ЕООД</td>
+        <td>BG79STSA93000030859315</td>
+        <td>ЛЕМЪНФАЙ ЕООД</td>
+        <td>03.07.2024</td>
+        <td>03.07.2024</td>
+        <td class="excelNum">50,99</td>
+        <td align="left">EUR</td>
+      </tr>
+    </table>
+  </body>
+</html>

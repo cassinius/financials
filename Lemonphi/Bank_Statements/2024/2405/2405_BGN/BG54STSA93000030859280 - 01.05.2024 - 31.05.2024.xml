@@ -1,0 +1,80 @@
+﻿<AccountMovementsResult>
+ <AccountMovementsFilter>
+   <BankAccountID>BG54STSA93000030859280 BGN</BankAccountID>
+   <StartDate>01.05.2024</StartDate>
+   <EndDate>31.05.2024</EndDate>
+ </AccountMovementsFilter>
+ <Sums>
+     <BeginSum>0,00</BeginSum>
+     <TurnoverCR>1000,00</TurnoverCR>
+     <TurnoverDR>146,05</TurnoverDR>
+     <EndSum>853,95</EndSum>
+ </Sums>
+ <Bank>
+  <Name>DSK Bank EAD</Name>
+  <Address>19, Moskovska Street, Sofia</Address>
+  <BIC>STSABGSF</BIC>
+ </Bank>
+ <Client>
+  <Name>LEMONPHI LTD</Name>
+  <PersonalIdBulstat>207822203</PersonalIdBulstat>
+  <Address>UL.GENA DIMITROVA 46</Address>
+</Client>
+ <AccountMovements>
+  <AccountMovement>
+   <AccountingDate>14.05.2024</AccountingDate>
+   <ValueDate>14.05.2024</ValueDate>
+   <Reason>ТРАНСФЕР НА КАПИТАЛ           БЕРНД ДИ МАЛ</Reason>
+   <OppositeSideName>ЛЕМЪНФАЙ ЕООД</OppositeSideName>
+   <OppositeSideAccount>BG84STSA93000030829155</OppositeSideAccount>
+   <MovementType>Credit</MovementType>
+   <Amount>1000,00</Amount>
+   <Date>14.05.2024</Date>
+   <Hour>01:11</Hour>
+  </AccountMovement>	
+  <AccountMovement>
+   <AccountingDate>14.05.2024</AccountingDate>
+   <ValueDate>14.05.2024</ValueDate>
+   <Reason>Ш.40011                       ФЛ/БКЛ-ВЪТР.БАНК.КР.ПРЕВОД</Reason>
+   <OppositeSideName></OppositeSideName>
+   <OppositeSideAccount>7291010221259999</OppositeSideAccount>
+   <MovementType>Debit</MovementType>
+   <Amount>5,00</Amount>
+   <Date>14.05.2024</Date>
+   <Hour>01:11</Hour>
+  </AccountMovement>	
+  <AccountMovement>
+   <AccountingDate>14.05.2024</AccountingDate>
+   <ValueDate>14.05.2024</ValueDate>
+   <Reason>Ш.40011                       ФЛ/БКЛ-ВЪТР.БАНК.КР.ПРЕВОД</Reason>
+   <OppositeSideName></OppositeSideName>
+   <OppositeSideAccount>7291010221259999</OppositeSideAccount>
+   <MovementType>Debit</MovementType>
+   <Amount>5,00</Amount>
+   <Date>14.05.2024</Date>
+   <Hour>01:15</Hour>
+  </AccountMovement>	
+  <AccountMovement>
+   <AccountingDate>14.05.2024</AccountingDate>
+   <ValueDate>14.05.2024</ValueDate>
+   <Reason>ЗАХРАНВАНЕ                    БЕРНД ДИ МАЛ</Reason>
+   <OppositeSideName>ЛЕМЪНФАЙ ЕООД</OppositeSideName>
+   <OppositeSideAccount>BG79STSA93000030859315</OppositeSideAccount>
+   <MovementType>Debit</MovementType>
+   <Amount>98,05</Amount>
+   <Date>14.05.2024</Date>
+   <Hour>01:15</Hour>
+  </AccountMovement>	
+  <AccountMovement>
+   <AccountingDate>31.05.2024</AccountingDate>
+   <ValueDate>31.05.2024</ValueDate>
+   <Reason>ТАКСА ПАКЕТНО ОБСЛУЖВАНЕ</Reason>
+   <OppositeSideName></OppositeSideName>
+   <OppositeSideAccount>7291130521259999</OppositeSideAccount>
+   <MovementType>Debit</MovementType>
+   <Amount>38,00</Amount>
+   <Date>31.05.2024</Date>
+   <Hour>12:00</Hour>
+  </AccountMovement>	
+ </AccountMovements>
+</AccountMovementsResult>

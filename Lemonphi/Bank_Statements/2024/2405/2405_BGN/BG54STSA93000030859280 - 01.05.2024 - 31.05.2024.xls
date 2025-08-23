@@ -1,0 +1,309 @@
+﻿
+
+
+<html xmlns:o="urn:schemas-microsoft-com:office:office"
+      xmlns:x="urn:schemas-microsoft-com:office:excel"
+      xmlns="http://www.w3.org/TR/REC-html40">
+<head>
+    <meta http-equiv="Content-Type" content="application/vnd.ms-excel; charset=utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name=ProgId content=Excel.Sheet>
+<style>
+    <!--table
+	    {mso-displayed-decimal-separator:"\,";
+	    mso-displayed-thousand-separator:" ";}
+    -->
+    </style>
+    <style>
+        #inquiryContent table, #accountTurnoverMovementsContent table, #bankAccountContent table {
+            border-collapse: collapse !important;
+            FONT-SIZE: 12px;
+            FONT-FAMILY: Arial;
+        }
+
+        #inquiryContent table tr td, #accountTurnoverMovementsContent table tr td {
+            border: 1px solid black;
+        }
+
+        .amt {
+            mso-number-format: "0.00";
+        }
+        .text {
+            mso-number-format: "\@";
+        }
+    </style>
+
+    <style>
+        .begin-balance-amount-ccy {
+            mso-number-format: "0.00 [$BGN]";
+        }
+
+        .end-balance-amount-ccy {
+            mso-number-format: "0.00 [$BGN]";
+        }
+
+        .alt-amount-ccy {
+            mso-number-format: "0.00 [$EUR]";
+        }
+    </style>
+</head>
+<body>
+    <div id="bankAccountContent">
+        <table>
+            <tr>
+                <th colspan="2" class="text">STATEMENT PERIOD</th>
+            </tr>
+            <tr>
+                <td colspan="2" class="text"></td>
+            </tr>
+            <tr>
+                <td colspan="2" class="text">DSK Bank EAD</td>
+            </tr>
+            <tr>
+                <td colspan="2" class="text">19, Moskovska Street, Sofia</td>
+            </tr>
+            <tr>
+                <td colspan="2" class="text">STSABGSF</td>
+            </tr>
+            <tr>
+                <td colspan="2" class="text"></td>
+            </tr>
+            <tr>
+                <td colspan="2" class="text">LEMONPHI LTD</td>
+            </tr>
+            <tr>
+                <td colspan="2" class="text">207822203</td>
+            </tr>
+            <tr>
+                <td colspan="2" class="text">UL.GENA DIMITROVA 46</td>
+            </tr>
+            <tr>
+                <td colspan="2">BG54STSA93000030859280 BGN</td>
+            </tr>
+            <tr>
+                <td colspan="2"></td>
+            </tr>
+            <tr>
+                <td class="text">Period from:</td>
+                <td class="text">01.05.2024</td>
+            </tr>
+            <tr>
+                <td class="text">to:</td>
+                <td class="text">31.05.2024</td>
+            </tr>
+            <tr>
+                <td class="text">Sum in the beginning for the period</td>
+                <td class="begin-balance-amount-ccy">
+0.00
+</td>
+            </tr>
+            <tr>
+                <td class="text">Turnover DR</td>
+                <td class="amt">
+146.05
+</td>
+            </tr>
+            <tr>
+                <td class="text">Turnover CR</td>
+                <td class="amt">
+1000.00
+</td>
+            </tr>
+            <tr>
+                <td class="text">Final sum for the period</td>
+                <td class="end-balance-amount-ccy">
+853.95
+</td>
+            </tr>
+        </table>
+    </div>
+
+        <div id="accountTurnoverMovementsContent" class="result-table-container">
+        <table class="table bordered striped">
+            <thead>
+                <tr>
+                    <th>Accounting date</th>
+                    <th>Value date</th>
+                    <th class="td9">Details</th>
+                    <th>Payer/Payee</th>
+                    <th>Payer / Payee Account</th>
+                    <th>Transaction type</th>
+                    <th>Binding reference</th>
+                    <th>Exchange rate</th>
+                    <th>Transaction amount</th>
+                    <th class="amt">Debit BGN</th>
+                    <th class="amt">Credit BGN</th>
+                    <th colspan="2">Date / time</th>
+                </tr>
+            </thead>
+                <tr>
+                    <td class="text" nowrap="nowrap" align="center">14.05.2024</td>
+                    <td class="text" nowrap="nowrap" align="center">14.05.2024</td>
+                    <td class="text" align="left" wrap="wrap">ТРАНСФЕР НА КАПИТАЛ           БЕРНД ДИ МАЛ</td>
+                    <td class="text">ЛЕМЪНФАЙ ЕООД</td>
+                    <td class="text" style='white-space: nowrap; width: 170px'>BG84STSA93000030829155</td>
+                    <td class="text" nowrap="nowrap" align="center">
+ПАРИЧЕН ПРЕВОД                    </td>
+                    <td class="text" nowrap="nowrap" align="center">
+67212578100009                    </td>
+                    <td class="text">
+                        </td>
+                    <td nowrap="nowrap" align="right" class="text">
+                    </td>
+                    <td nowrap="nowrap" align="right" class="amt">
+                    </td>
+                    <td nowrap="nowrap" align="right" class="amt">
+
+1000.00
+                    </td>
+                    <td colspan="2" class="text">
+                        
+    14.05.2024
+
+
+    13:11
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="text" nowrap="nowrap" align="center">14.05.2024</td>
+                    <td class="text" nowrap="nowrap" align="center">14.05.2024</td>
+                    <td class="text" align="left" wrap="wrap">Ш.40011                       ФЛ/БКЛ-ВЪТР.БАНК.КР.ПРЕВОД</td>
+                    <td class="text"></td>
+                    <td class="text" style='white-space: nowrap; width: 170px'>7291010221259999</td>
+                    <td class="text" nowrap="nowrap" align="center">
+ПАРИЧЕН ПРЕВОД                    </td>
+                    <td class="text" nowrap="nowrap" align="center">
+67212578100009                    </td>
+                    <td class="text">
+                        </td>
+                    <td nowrap="nowrap" align="right" class="text">
+                    </td>
+                    <td nowrap="nowrap" align="right" class="amt">
+
+5.00
+                    </td>
+                    <td nowrap="nowrap" align="right" class="amt">
+                    </td>
+                    <td colspan="2" class="text">
+                        
+    14.05.2024
+
+
+    13:11
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="text" nowrap="nowrap" align="center">14.05.2024</td>
+                    <td class="text" nowrap="nowrap" align="center">14.05.2024</td>
+                    <td class="text" align="left" wrap="wrap">Ш.40011                       ФЛ/БКЛ-ВЪТР.БАНК.КР.ПРЕВОД</td>
+                    <td class="text"></td>
+                    <td class="text" style='white-space: nowrap; width: 170px'>7291010221259999</td>
+                    <td class="text" nowrap="nowrap" align="center">
+ТРАНСФЕР СОБСТВЕНИ СМЕТКИ                    </td>
+                    <td class="text" nowrap="nowrap" align="center">
+67212578100010                    </td>
+                    <td class="text">
+                        </td>
+                    <td nowrap="nowrap" align="right" class="text">
+                    </td>
+                    <td nowrap="nowrap" align="right" class="amt">
+
+5.00
+                    </td>
+                    <td nowrap="nowrap" align="right" class="amt">
+                    </td>
+                    <td colspan="2" class="text">
+                        
+    14.05.2024
+
+
+    13:15
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="text" nowrap="nowrap" align="center">14.05.2024</td>
+                    <td class="text" nowrap="nowrap" align="center">14.05.2024</td>
+                    <td class="text" align="left" wrap="wrap">ЗАХРАНВАНЕ                    БЕРНД ДИ МАЛ</td>
+                    <td class="text">ЛЕМЪНФАЙ ЕООД</td>
+                    <td class="text" style='white-space: nowrap; width: 170px'>BG79STSA93000030859315</td>
+                    <td class="text" nowrap="nowrap" align="center">
+ТРАНСФЕР СОБСТВЕНИ СМЕТКИ                    </td>
+                    <td class="text" nowrap="nowrap" align="center">
+67212578100010                    </td>
+                    <td class="text">
+                                EUR/BGN:
+
+1.96100000
+                        </td>
+                    <td nowrap="nowrap" align="right" class="text">
+
+50.00
+EUR                    </td>
+                    <td nowrap="nowrap" align="right" class="amt">
+
+98.05
+                    </td>
+                    <td nowrap="nowrap" align="right" class="amt">
+                    </td>
+                    <td colspan="2" class="text">
+                        
+    14.05.2024
+
+
+    13:15
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="text" nowrap="nowrap" align="center">31.05.2024</td>
+                    <td class="text" nowrap="nowrap" align="center">31.05.2024</td>
+                    <td class="text" align="left" wrap="wrap">ТАКСА ПАКЕТНО ОБСЛУЖВАНЕ</td>
+                    <td class="text"></td>
+                    <td class="text" style='white-space: nowrap; width: 170px'>7291130521259999</td>
+                    <td class="text" nowrap="nowrap" align="center">
+                    </td>
+                    <td class="text" nowrap="nowrap" align="center">
+                    </td>
+                    <td class="text">
+                        </td>
+                    <td nowrap="nowrap" align="right" class="text">
+                    </td>
+                    <td nowrap="nowrap" align="right" class="amt">
+
+38.00
+                    </td>
+                    <td nowrap="nowrap" align="right" class="amt">
+                    </td>
+                    <td colspan="2" class="text">
+                        
+    31.05.2024
+
+
+    00:00
+
+                    </td>
+                </tr>
+            <tfoot>
+                <tr>
+                    <td colspan="9" style="text-align:right">Total</td>
+                    <td class="amt">
+                        
+146.05
+
+                    </td>
+                    <td class="amt">
+                        
+1000.00
+
+                    </td>
+                    <td colspan="2"></td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+
+</body>
+</html>
